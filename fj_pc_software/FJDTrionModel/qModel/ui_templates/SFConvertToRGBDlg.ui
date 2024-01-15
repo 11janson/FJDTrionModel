@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SFConvertToRGBDlg</class>
+ <widget class="QWidget" name="SFConvertToRGBDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>110</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>110</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>110</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Scalar field to RGB</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>24</number>
+   </property>
+   <property name="rightMargin">
+    <number>24</number>
+   </property>
+   <property name="bottomMargin">
+    <number>15</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>22</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>22</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(40, 42, 43);</string>
+     </property>
+     <property name="text">
+      <string>Mix with existing colors(if any)?</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>12</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>16</number>
+     </property>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_cancel">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	width: 80px;
+	height: 30px;
+	border-radius: 2px;
+	border: 1px solid #585858;
+	font-size:14px;
+	color:rgb(176, 173, 177);
+	background-color:transparent;
+}
+QPushButton:hover{
+	background-color:rgb(27, 24, 28);
+}
+QPushButton:pressed{
+	background-color:rgb(27, 24, 28);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_no">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	width: 80px;
+	height: 30px;
+	border-radius: 2px;
+	border: 1px solid #585858;
+	font-size:14px;
+	color:rgb(176, 173, 177);
+	background-color:transparent;
+}
+QPushButton:hover{
+	background-color:rgb(27, 24, 28);
+}
+QPushButton:pressed{
+	background-color:rgb(27, 24, 28);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>No</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_ok">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	width: 80px;
+	height: 30px;
+	border-radius: 2px;
+	border: 1px solid #585858;
+	font-size:14px;
+	color:rgb(0, 0, 0);
+	background-color:rgb(255, 200, 5);
+}
+QPushButton:hover{
+	background-color:rgb(255, 227, 126);
+}
+QPushButton:pressed{
+	background-color:rgb(255, 227 , 131);
+}
+
+QPushButton:disabled{
+	background-color:#6B5A1F;
+}</string>
+       </property>
+       <property name="text">
+        <string>Yes</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

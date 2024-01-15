@@ -1,0 +1,1 @@
+CHISHINE_LIB_NAME = csutils

@@ -1,0 +1,2 @@
+NOVA_LIB_NAME = ncspdlog
+NOVA_LIB_DEPENDS +=

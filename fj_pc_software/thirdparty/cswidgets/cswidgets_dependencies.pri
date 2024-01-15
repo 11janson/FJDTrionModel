@@ -1,0 +1,3 @@
+CHISHINE_LIB_NAME = cswidgets
+
+CHISHINE_LIB_DEPENDS += \

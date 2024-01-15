@@ -1,0 +1,37 @@
+project( FJDPluginAPI )
+
+include(ccqfc_dependencies)
+#链接库
+link_libraries(optimized ${LIBRARY_OUTPUT_PATH}/trionmetahubutils.lib debug ${LIBRARY_OUTPUT_PATH}/trionmetahubutilsd.lib)
+
+add_library( ${PROJECT_NAME} SHARED )
+
+find_package( Qt5
+	COMPONENTS
+		Gui
+	REQUIRED
+)
+
+add_subdirectory( include )
+add_subdirectory( src )
+add_subdirectory( ui )
+
+# We only need the includes from the stub
+get_target_property( STUB_INCLUDES FJDPluginStub INCLUDE_DIRECTORIES )
+
+target_include_directories( ${PROJECT_NAME} PUBLIC "${STUB_INCLUDES}" )
+
+target_link_libraries( ${PROJECT_NAME} PUBLIC
+	QFJD_GL_LIB
+	QFJD_IO_LIB
+    cswidgets
+)
+
+target_compile_definitions( ${PROJECT_NAME} PRIVATE CCPLUGIN_API_LIBRARY_BUILD )
+
+set_target_properties( ${PROJECT_NAME} PROPERTIES
+	AUTOUIC ON # FIXME Remove after everything has moved to targets and we can set it globally
+	CXX_VISIBILITY_PRESET hidden
+)
+
+InstallSharedLibrary( TARGET ${PROJECT_NAME} )

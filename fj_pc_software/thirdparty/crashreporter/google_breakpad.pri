@@ -1,0 +1,5 @@
+include($$PWD/google_breakpad/common/common.pri)
+include($$PWD/google_breakpad/crash_generation_client/crash_generation_client.pri)
+include($$PWD/google_breakpad/exception_handler/exception_handler.pri)
+include($$PWD/google_breakpad/crash_report_sender/crash_report_sender.pri)
+include($$PWD/crashhandler/crashhandler.pri)

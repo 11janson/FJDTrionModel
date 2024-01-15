@@ -1,0 +1,3 @@
+CHISHINE_LIB_NAME = cloudcompareutils
+
+CHISHINE_LIB_DEPENDS += \

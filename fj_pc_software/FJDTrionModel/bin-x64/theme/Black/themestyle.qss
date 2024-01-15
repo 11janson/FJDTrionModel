@@ -1,0 +1,1761 @@
+﻿/*QWidget部分-start------------------------------------------------------------------------------------------------------------------*/
+
+QWidget
+{
+    background-color:#282A2B;
+	border-color: #1C1C1C;
+	color:#ffffff;
+	font-family:"Microsoft YaHei UI";
+}
+
+QDialog
+{
+    background-color:#1C1C1C;
+	border-color: #1C1C1C;
+	color:#ffffff;
+	font-family:"Microsoft YaHei UI";
+}
+
+QMainWindow
+{
+    background-color:#1C1C1C;
+	border-color: #1C1C1C;
+	color:#ffffff;
+	font-family:"Microsoft YaHei UI";
+}
+
+QDockWidget 
+{
+	titlebar-normal-icon: url(theme/qssimage/Dockwidgetfloatbutton.png);
+
+}
+
+QDockWidget::float-button 
+{
+	color:#ff0000;
+
+}
+
+QDockWidget::title {
+    background-color: #212121;
+	text-align: left center ;
+}
+
+/*QWidget部分-end------------------------------------------------------------------------------------------------------------------*/
+
+QFrame[framehoderbackground]{
+	border:1px solid rgb(88, 88, 88);
+	border-radius: 4px;
+    background-color:rgb(42, 44, 45);
+}
+
+QWidget[centercontentgrayframe]{
+	border:none;
+	background-color:rgb(52, 51, 54);
+}
+QWidget[transparentbackgroundwidget]{
+	background-color:transparent;
+}
+/*此处可以改action样式*/
+
+
+
+
+
+/*SARibbon部分-start------------------------------------------------------------------------------------------------------------------*/
+/*此处可以改左边两个树最外层界面样式*/
+SARibbonMainWindow {
+	background-color: #1c1c1c;
+	border: 0px solid #1c1c1c;
+}
+
+/*此处可以改最上一行标题栏样式，上方最外层样式*/
+SARibbonBar
+{
+    background-color:#1c1c1c;
+	border-color: 0px solid #1c1c1c;
+	color:#ffffff;
+}
+
+
+
+/*此处可以改左上方undo和redo两个按钮外层样式和右上角FJDynamic按钮外层样式*/
+SARibbonButtonGroupWidget {
+	background-color: #1c1c1c;
+	max-height:26px;
+	min-height:26px;
+}
+
+
+
+
+/*此处未知*/
+SARibbonPannel > SARibbonButtonGroupWidget {
+	border: 1px solid #ff0000;
+}
+
+
+/*此处未知*/
+SARibbonQuickAccessBar {
+	background-color:#ffffff;
+}
+
+
+/*此处未知*/
+SARibbonCtrlContainer {
+  background-color: #ffffff;
+}
+
+
+/*此处未知*/
+SARibbonCategory:focus {
+  outline: none;
+}
+SARibbonCategory {
+  background-color: #ffffff;
+}
+
+
+/*此处修改第三层按钮栏最外层样式*/
+
+SARibbonStackedWidget {
+  background-color: #484848;
+  border: 0px solid #ff0000;
+}
+
+SARibbonStackedWidget:focus {
+  outline: none;
+}
+
+
+
+/*此处修改左上角file按钮*/
+QAbstractButton#SARibbonApplicationButton {
+	color: #ffffff;
+	border: none;
+	background: #2B2B2B;
+	text-align: center center ;
+	min-width: 60px;
+	max-width: 200px;
+	min-height: 26px;
+	max-height: 26px;
+	font-size: 14px;
+}
+
+QAbstractButton#SARibbonApplicationButton::active {
+	color: #ffffff;
+	border: none;
+	background: #2B2B2B;
+}
+
+QAbstractButton#SARibbonApplicationButton::hover {
+	color: #ffffff;
+	border: 0px solid #1c1c1c;
+	background-color: #484848;
+	border-bottom-color: #1c1c1c;
+}
+
+QAbstractButton#SARibbonApplicationButton::pressed {
+	color: #ffffff;
+	border: 0px solid #1c1c1c;
+	background-color: #484848;
+	border-bottom-color: #1c1c1c;
+}
+
+QAbstractButton#SARibbonApplicationButton:disabled {
+	color: #838383;
+}
+
+
+/*此处可以改软件左上角edit和view按钮所在行标题栏样式*/
+SARibbonTabBar {
+	background-color: #2B2B2B;
+	color: #ffffff;
+	font-size:14px;
+}
+
+
+/*此处可以改软件左上角edit和view按钮样式*/
+SARibbonTabBar::tab {
+	color: #ffffff;
+	border: none;
+	background: #2B2B2B;
+	text-align: center bottom ;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 6px;
+	margin-bottom: 0px;
+	min-width: 60px;
+	max-width: 200px;
+	min-height: 26px;
+	max-height: 26px;
+}
+
+
+SARibbonTabBar::tab:hover {
+	color: #ffffff;
+	border: 1px solid #1c1c1c;
+	background-color: #555555;
+	border-bottom-color: #1c1c1c;
+}
+
+SARibbonTabBar::tab:selected {
+	color: #FFC804;
+	border: 1px solid #1c1c1c;
+	background-color: #484848;
+	border-bottom-color: #1c1c1c;
+}
+
+
+
+/*此处修改FJDynamic按钮后面的箭头*/
+
+SARibbonControlButton {
+	background-color: #2B2B2B;
+	border: 0px solid transparent;
+	color: #ffffff;
+}
+
+SARibbonControlButton#SARibbonGalleryButtonUp, #SARibbonGalleryButtonDown, #SARibbonGalleryButtonMore {
+	border: 0px solid #cee8fc;
+}
+
+SARibbonControlButton#SARibbonBarHidePannelButton {
+	min-width: 35px;
+	background-color: #2B2B2B;
+	color: #ffffff;
+	border-bottom: 0px solid transparent;
+	border-top: 0px solid transparent;
+	border-right: 0px solid transparent;
+	border-left: 1px solid #989898;;
+}
+
+SARibbonControlButton#SARibbonBarHidePannelButton:hover {
+	background-color: #555555;
+	color: #ffffff;
+}
+
+SARibbonControlButton#SARibbonBarHidePannelButton:disabled {
+	background-color: #555555;
+	color: #838383;
+}
+
+SARibbonControlButton#SARibbonBarHidePannelButton:pressed {
+	background-color: #484848;
+	color: #FAC804;
+}
+
+SARibbonControlButton:pressed {
+  border: 0px solid #269bf4;
+  background-color: #9ed2f9;
+}
+
+SARibbonControlButton:hover {
+  border: 0px solid #badffa;
+  background-color: #ff0000;
+}
+
+
+
+/*此处未知*/
+SARibbonMenu {
+	color: #ff0000;
+	background-color: #FCFCFC;
+	border: 1px solid #c2d0df;
+}
+
+SARibbonMenu::item {
+	padding: 5px 25px 5px 25px;
+	background-color: #ffffff;
+}
+
+SARibbonMenu::item:selected {
+	background-color: #ff0000;
+}
+
+SARibbonMenu::item:hover {
+	color: #ff0000;
+	background-color: #ff0000;
+	border: 1px solid #badffa;
+}
+
+SARibbonMenu::icon {
+	margin-left: 1px;
+}
+
+
+/*此处未知*/
+SARibbonPannelOptionButton {
+	background-color: #ffffff;
+	color: #ff0000;
+}
+
+SARibbonPannelOptionButton::hover {
+	background-color: #ff0000;
+	border: 0px;
+}
+
+
+
+
+/*此处修改右侧FJDynamic按钮样式*/
+SARibbonToolButton#FJDynamics {
+	border: 0px solid #ffffff;
+	color: #ffffff;
+	background-color: #2B2B2B;
+	min-width :90px;
+	min-height:26px;
+	max-height:26px;
+}
+
+SARibbonToolButton#FJDynamics:hover {
+	border: 0px solid #1c1c1c;
+	background: #555555;
+	color: #ffffff;
+	border-bottom-color: #1c1c1c;
+}
+
+SARibbonToolButton#FJDynamics:pressed {
+	color: #FFC804;
+	border: 0px solid #1c1c1c;
+	background: #555555;
+	border-bottom-color: #1c1c1c;
+}
+
+
+
+
+
+
+
+/*此处修改view中点大小按钮样式*/
+QWidget#actionlinewidth,
+QWidget#actionpointsize
+{
+	color: #ffffff;
+	background-color: #484848;
+	border:0px solid #ffffff;
+	min-width : 70px;
+    background-origin: content;
+    background-repeat: no-repeat;
+    font-size: 13px;
+}
+
+QWidget#dockwidgettitle
+{
+	color: #ffffff; 
+	background-color:#212121;
+	border-bottom: 1px solid #585858;
+	border-top: 1px solid #101010;
+	padding-left:2px;
+	font-size: 15px;
+}
+
+QLabel[titlebarcontenttitle]
+{
+	color: #ffffff;
+	background-color: #1C1C1C;
+	border:0px solid #ffffff;
+	font-size: 16px;
+	padding-left:25px;
+	padding-top:5px;
+	text-align: left bottom ;
+}
+QLabel[metahubtitlecontent]{
+	background-color:transparent;
+	font-size: 16px;
+	padding-left:0px;
+	padding-top:5px;
+}
+
+QLabel#ccqfctitleLabel
+{
+	color: #ffffff;
+	background-color: #282A2B;
+	border:0px solid #ffffff;
+	font-size: 16px;
+	padding-left:25px;
+	padding-top:5px;
+	text-align: left bottom ;
+}
+
+QLabel#logolabeltopleft
+{
+	padding-bottom:5px;
+}
+
+QLabel#Messageboxtitlelabel
+{
+	color: #ffffff;
+	background-color: #1C1C1C;
+	border:0px solid #ffffff;
+	font-size: 16px;
+	padding-top:5px;
+	text-align: left bottom ;
+}
+
+
+QLabel#actionlinewidthlabel,
+QLabel#actionpointsizelable
+{
+	color: #ffffff;
+	background-color: #484848;
+    font-size: 13px;
+	text-align: center top ;
+}
+
+
+
+QComboBox
+{
+
+	background-color: #2B2B2B;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+}
+
+QComboBox:on
+{
+
+	background-color: #2B2B2B;
+	border: 1px solid #ffffff;
+	color: #FFC804;
+}
+
+
+
+
+QComboBox::down-arrow
+{
+	image:url(theme/qssimage/mainwidget_downarrow_hover.png);
+}
+
+
+QComboBox#actionlinewidthcombox,
+QComboBox#actionpointsizecombox
+{
+	color: #ffffff;
+	font-size: 15px;
+	background-color: #484848;
+	border-top: 0px solid #ffffff;
+	border-left: 0px solid #ffffff;
+	border-right: 0px solid #ffffff;
+	border-bottom: 2px solid #ffffff;
+}
+
+QComboBox#actionlinewidthcombox:on,
+QComboBox#actionpointsizecombox:on 
+{
+	color: #FFC804;
+	font-size: 13px;
+	background-color: #484848;
+	border-top: 0px solid #ffffff;
+	border-left: 0px solid #ffffff;
+	border-right: 0px solid #ffffff;
+	border-bottom: 2px solid #ffffff;
+	
+}
+
+
+QComboBox#actionlinewidthcombox::drop-down,
+QComboBox#actionpointsizecombox::drop-down
+{
+	background-color: transparent;
+	border: 0px solid #1c1c1c;
+}
+
+
+/*此处修改分割功能7给按钮样式*/
+QToolButton#actionSetPolylineSelectionbtn,
+QToolButton#actionSetRectangularSelectionbtn,
+QToolButton#cancelButton,
+QToolButton#inButton,
+QToolButton#outButton,
+QToolButton#razButton,
+QToolButton#validButton
+{
+	color: #ffffff;
+	background-color: #3B3B3B;
+    background-origin: content;
+    background-position: top;
+    text-align: bottom;
+}
+
+QToolButton#actionSetPolylineSelectionbtn::hover,
+QToolButton#actionSetRectangularSelectionbtn::hover,
+QToolButton#cancelButton::hover,
+QToolButton#inButton::hover,
+QToolButton#outButton::hover,
+QToolButton#razButton::hover,
+QToolButton#validButton::hover
+{
+	background-color: #545454;
+}
+
+QToolButton#actionSetPolylineSelectionbtn::disabled,
+QToolButton#actionSetRectangularSelectionbtn::disabled,
+QToolButton#cancelButton::disabled,
+QToolButton#inButton::disabled,
+QToolButton#outButton::disabled,
+QToolButton#razButton::disabled,
+QToolButton#validButton::disabled
+{
+	background-color: #3B3B3B;
+}
+
+QToolButton#actionSetPolylineSelectionbtn::pressed,
+QToolButton#actionSetRectangularSelectionbtn::pressed,
+QToolButton#cancelButton::pressed,
+QToolButton#inButton::pressed,
+QToolButton#outButton::pressed,
+QToolButton#razButton::pressed,
+QToolButton#validButton::pressed
+{
+	background-color: #5A5A5A;
+}
+
+
+SARibbonToolButton
+{
+    font-size: 13px;
+	text-align: top;
+}
+QToolButton[transparentbackgroundbutton]{
+	background-color:transparent;
+}
+
+
+SARibbonToolButton#actionPlugins,
+SARibbonToolButton#actionShadersFilters,
+SARibbonToolButton#actionSetUniqueColor,
+SARibbonToolButton#actionDisplayOptions,
+SARibbonToolButton#actionvieweye,
+SARibbonToolButton#actionSegment,
+SARibbonToolButton#actionSubsample,
+SARibbonToolButton#actioncoortransform,
+SARibbonToolButton#actionPointPicking,
+SARibbonToolButton#actionDistancePicking,
+SARibbonToolButton#actionAnglePicking,
+SARibbonToolButton#actionheightdismeasure,
+SARibbonToolButton#actionaerameasure,
+SARibbonToolButton#actionvolumemeasure,
+SARibbonToolButton#actionclosepicking,
+SARibbonToolButton#actionoutRoomClass,
+SARibbonToolButton#actioninRoomClass,
+SARibbonToolButton#actionFloorextractionClass,
+SARibbonToolButton#actionNoiseFilter,
+SARibbonToolButton#actionSORFilter,
+SARibbonToolButton#actionLabelConnectedComponents
+{
+	color: #ffffff;
+	background-color: #484848;	
+	min-width : 70px;
+	max-width : 70px;
+    background-repeat: no-repeat;
+    font-size: 13px;
+}
+
+
+SARibbonToolButton#actionPlugins::hover,
+SARibbonToolButton#actionShadersFilters::hover,
+SARibbonToolButton#actionSetUniqueColor::hover,
+SARibbonToolButton#actionDisplayOptions::hover,
+SARibbonToolButton#actionvieweye::hover,
+SARibbonToolButton#actionSegment::hover ,
+SARibbonToolButton#actionSubsample::hover ,
+SARibbonToolButton#actioncoortransform::hover ,
+SARibbonToolButton#actionPointPicking::hover ,
+SARibbonToolButton#actionDistancePicking::hover ,
+SARibbonToolButton#actionAnglePicking::hover ,
+SARibbonToolButton#actionheightdismeasure::hover ,
+SARibbonToolButton#actionaerameasure::hover ,
+SARibbonToolButton#actionvolumemeasure::hover ,
+SARibbonToolButton#actionclosepicking::hover ,
+SARibbonToolButton#actionoutRoomClass::hover ,
+SARibbonToolButton#actioninRoomClass::hover ,
+SARibbonToolButton#actionFloorextractionClass::hover ,
+SARibbonToolButton#actionNoiseFilter::hover ,
+SARibbonToolButton#actionSORFilter::hover ,
+SARibbonToolButton#actionLabelConnectedComponents::hover 
+{
+	border: 5px solid #484848;
+	background: #555555;
+	color: #ffffff;
+
+	
+
+}
+
+
+SARibbonToolButton#actionPlugins::disabled,
+SARibbonToolButton#actionShadersFilters::disabled,
+SARibbonToolButton#actionSetUniqueColor::disabled,
+SARibbonToolButton#actionDisplayOptions::disabled,
+SARibbonToolButton#actionvieweye::disabled,
+SARibbonToolButton#actionSegment::disabled ,
+SARibbonToolButton#actionSubsample::disabled ,
+SARibbonToolButton#actioncoortransform::disabled ,
+SARibbonToolButton#actionPointPicking::disabled ,
+SARibbonToolButton#actionDistancePicking::disabled ,
+SARibbonToolButton#actionAnglePicking::disabled ,
+SARibbonToolButton#actionheightdismeasure::disabled ,
+SARibbonToolButton#actionaerameasure::disabled ,
+SARibbonToolButton#actionvolumemeasure::disabled ,
+SARibbonToolButton#actionclosepicking::disabled ,
+SARibbonToolButton#actionoutRoomClass::disabled ,
+SARibbonToolButton#actioninRoomClass::disabled ,
+SARibbonToolButton#actionFloorextractionClass::disabled ,
+SARibbonToolButton#actionNoiseFilter::disabled ,
+SARibbonToolButton#actionSORFilter::disabled ,
+SARibbonToolButton#actionLabelConnectedComponents::disabled 
+{
+	color: #838383;	
+}
+
+SARibbonToolButton#actionPlugins::pressed,
+SARibbonToolButton#actionShadersFilters::pressed,
+SARibbonToolButton#actionSetUniqueColor::pressed,
+SARibbonToolButton#actionDisplayOptions::pressed,
+SARibbonToolButton#actionvieweye::pressed,
+SARibbonToolButton#actionSegment::pressed,
+SARibbonToolButton#actionSubsample::pressed,
+SARibbonToolButton#actioncoortransform::pressed,
+SARibbonToolButton#actionPointPicking::pressed,
+SARibbonToolButton#actionDistancePicking::pressed,
+SARibbonToolButton#actionAnglePicking::pressed,
+SARibbonToolButton#actionheightdismeasure::pressed,
+SARibbonToolButton#actionaerameasure::pressed,
+SARibbonToolButton#actionvolumemeasure::pressed ,
+SARibbonToolButton#actionclosepicking::pressed ,
+SARibbonToolButton#actionoutRoomClass::pressed ,
+SARibbonToolButton#actioninRoomClass::pressed ,
+SARibbonToolButton#actionFloorextractionClass::pressed ,
+SARibbonToolButton#actionNoiseFilter::pressed ,
+SARibbonToolButton#actionSORFilter::pressed ,
+SARibbonToolButton#actionLabelConnectedComponents::pressed 
+{
+	color: #FFC804;
+	border: 0px solid #1c1c1c;
+	background: #555555;
+	border-bottom-color: #1c1c1c;
+}
+
+
+
+
+SARibbonToolButton::selected {
+	color: #FFC804;
+	border: 0px solid #1c1c1c;
+	background: #484848;
+	border-bottom-color: #1c1c1c;
+}
+
+SARibbonToolButton::pressed {
+	color: #FFC804;
+	border: 0px solid #1c1c1c;
+	background: #555555;
+	border-bottom-color: #1c1c1c;
+}
+
+
+SARibbonToolButton::hover {
+	border: 0px solid #1c1c1c;
+	background: #555555;
+	color: #ffffff;
+	border-bottom-color: #1c1c1c;
+}
+
+SARibbonToolButton:focus {
+	color: #FFC804;
+	border: 0px solid #1c1c1c;
+	background: #555555;
+	border-bottom-color: #1c1c1c;
+}
+
+
+/*此处第三行菜单栏下面一行字体样式*/
+SARibbonPannel {
+	background-color: #ffffff;
+	border: 0px;
+	color: #B1B1B1;
+}
+
+
+/*此处未知*/
+SARibbonGallery {
+	border: 1px solid #c2d0df;
+	background-color: #ffffff;
+	color: #333;
+}
+
+
+/*此处未知*/
+SARibbonGalleryGroup {
+	show-decoration-selected: 1;
+	background-color: #ffffff;
+	color: #333;
+	border: 1px solid #c2d0df;
+}
+
+SARibbonGalleryGroup::item:selected {
+	background-color: #ff0000;
+	color: black;
+}
+
+SARibbonGalleryGroup::item:hover {
+	border: 2px solid #badffa;
+	background-color: #ff0000;
+}
+
+
+
+/*此处未知*/
+RibbonGalleryViewport {
+	background-color: #ffffff;
+}
+
+
+/*此处未知*/
+SARibbonLineEdit {
+	border: 1px solid #C0C2C4;
+	background: #ffffff;
+	selection-background-color: #9BBBF7;
+	selection-color: #ff0000;
+}
+
+
+
+/*此处未知*/
+SARibbonComboBox {
+	border: 1px solid #ff0000;
+}
+
+SARibbonComboBox:hover {
+	border: 1px solid #ff0000;
+	color: #000;
+}
+
+SARibbonComboBox:editable {
+	color: #000;
+	background: #ff0000;
+	selection-background-color: #9BBBF7;
+	selection-color: #000;
+}
+
+SARibbonComboBox::drop-down {
+	subcontrol-origin: padding;
+	subcontrol-position: top right;
+	width: 15px;
+	border-left: none;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+SARibbonComboBox::drop-down:hover {
+	border: 1px solid #FDEEB3;
+	background-color: #ff0000;
+}
+
+SARibbonComboBox::down-arrow {
+	image: url(theme/qssimage/ArrowDown.png);
+}
+
+
+/*此处修改第三行菜单分割线*/
+SARibbonSeparatorWidget {
+  /*background-color: transparent;*/
+	background-color: #989898;
+	min-height:75px;
+	max-height:75px;
+	padding-top: 25px;
+}
+
+/*此处修改第三栏菜单最小化后右边按钮*/
+SARibbonCategoryScrollButton {
+	border: 0px solid #FF00FF;
+	color: #ffffff;
+	background-color: #666666;
+}
+
+SARibbonCategoryScrollButton[arrowType="3"] {
+	border-right-width: 0px;
+}
+
+SARibbonCategoryScrollButton[arrowType="4"] {
+	border-left-width: 0px;
+}
+
+SARibbonCategoryScrollButton::hover {
+	color: #000000;
+	background-color: #666666;
+}
+
+
+
+
+/*此处修改右上角的最大最小关闭按钮样式*/
+SAWindowToolButton { 
+	background-color: #1C1C1C; 
+	border:none;
+}
+
+
+SAWindowToolButton#SAMinimizeWindowButton {
+	image: url(theme/qssimage/minimize.png);
+	background-color: #1C1C1C; 
+	border:none;
+}
+
+SAWindowToolButton#SAMaximizeWindowButton:checked {
+	image:url(theme/qssimage/maximize.png);
+}
+
+SAWindowToolButton#SAMaximizeWindowButton {
+	image:url(theme/qssimage/systembuttonmaximize.png);
+	background-color: #1C1C1C; 
+	border:none;
+}
+
+SAWindowToolButton#SAMinimizeWindowButton:hover,#SAMaximizeWindowButton:hover {
+	background-color: #484848;
+}
+
+SAWindowToolButton#SAMinimizeWindowButton:pressed {
+	background-color: #484848;
+	image: url(theme/qssimage/minimize.png);
+}
+
+SAWindowToolButton#SAMaximizeWindowButton:pressed {
+	background-color: #484848;
+	image: url(theme/qssimage/maximize.png);
+}
+
+SAWindowToolButton#SACloseWindowButton {
+	image: url(theme/qssimage/close.png);
+	background-color: #1C1C1C; 
+	border:none;
+}
+
+SAWindowToolButton#SACloseWindowButton:hover {
+	background-color: #484848;
+	image: url(theme/qssimage/close.png);
+}
+
+SAWindowToolButton#SACloseWindowButton:pressed {
+	background-color: #484848;
+	image: url(theme/qssimage/warning.png);
+}
+
+QFileDialog {
+    background-color:#202020;
+}
+
+
+QFileDialog >QComboBox 
+{
+	border: 1px solid #4D4D4D;
+}
+
+QFileDialog QTreeView::item
+{
+	border: 0px solid #383838;
+}
+
+
+
+QFileDialog QListView
+{
+	border: 0px solid #B0C4DE;
+} 
+
+QFileDialog QLineEdit
+{
+	background-color:#2B2B2B;
+	color: #ffffff;
+	border:1px solid #4D4D4D;
+}
+
+
+/*QTextEdit和QLineEdit部分-start------------------------------------------------------------------------------------------------------------------*/
+QTextEdit
+{
+	background-color:#2B2B2B;
+	color: #ffffff;
+	border:1px solid #4D4D4D;
+}
+
+
+QLineEdit
+{
+	background-color:#2B2B2B;
+	color: #ffffff;
+	border:1px solid #4D4D4D;
+}
+
+/*QTextEdit和QLineEdit部分-end------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*此处未知*/
+SAWindowToolButton#SARibbonBarHidePannelButton {
+	background-color: #ff0000;
+	titlebar-shade-icon: url(theme/qssimage/warning2x.png);
+	titlebar-unshade-icon: url(theme/qssimage/warning2x.png);
+}
+
+
+
+
+/*QTreeView部分-start------------------------------------------------------------------------------------------------------------------*/
+QTreeView
+{
+	font: 13px;
+	alternate-background-color: #2B2B2B;
+	background-color: #2B2B2B;
+	border: 0px solid #B0C4DE;
+	color:#ffffff;
+}
+
+ /*所有树：条目列高为27*/
+QTreeView::item
+{
+	height: 27px;
+	border: 1px solid #383838;
+	padding-left:10px;
+}
+ 
+  /* dockWidget中的树：鼠标悬浮于条目上时，该条目背景颜色变为灰色 */
+QTreeView::item:hover,QTreeView::branch:hover
+{
+	background: #555555;
+	color: #ffffff;
+}
+
+  /*所有树：条目被选中时背景颜色变为浅蓝,文字颜色*/
+QTreeView::item:selected,QTreeView::branch:selected  
+{
+	background: #4D4D4D;
+	color: #ffffff;
+}
+ 
+QTreeView::branch
+{
+	background-color:#2B2B2B;
+	color: #ffffff;
+	padding-left:9px;
+}
+
+QTreeView::branch:closed:has-children{
+    image: url(theme/qssimage/mainwidget_uparrow_hover.png);
+}
+
+QTreeView::branch::open::has-children{
+    image: url(theme/qssimage/mainwidget_downarrow_hover.png);
+}
+
+ 
+QTreeView>QHeaderView::down-arrow 
+{
+    image: url(theme/qssimage/mainwidget_downarrow_hover.png);
+}
+
+QTreeView>QHeaderView::up-arrow 
+{
+    image: url(theme/qssimage/mainwidget_uparrow_hover.png);
+}
+QTreeView>QHeaderView::down-arrow:hover 
+{
+    image: url(theme/qssimage/mainwidget_downarrow_hover.png);
+}
+
+QTreeView>QHeaderView::up-arrow:hover
+{
+    image: url(theme/qssimage/mainwidget_uparrow_hover.png);
+}
+   /*所有树头*/
+QTreeView>QHeaderView::section 
+{
+    font: 14px;
+    background-color: #202020;
+	border-right:0;
+	border:1px solid #4D4D4D;
+    border-top:0px solid #232427;
+	border-bottom:0px solid #232427;
+	border-left:0px solid #232427;
+	padding-left:10px;
+}
+QTreeView >QHeaderView::section:first 
+{
+	width:35px;
+}
+
+
+   /*QTreeWidgetItem未勾选状态，选框图片及背景图片*/
+QTreeView::indicator:unchecked
+{
+	image: url(theme/qssimage/checkbox_unchecked_normal.png);
+}
+ /*QTreeWidgetItem勾选状态，选框图片及背景图片*/
+QTreeView::indicator:checked 
+{
+	image: url(theme/qssimage/selected.png);
+}
+ /*QTreeWidgetItem未勾选hover状态，选框图片*/
+QTreeView::indicator:unchecked:hover
+{
+	image: url(theme/qssimage/checkbox_unchecked_hover.png);
+}
+ /*QTreeWidgetItem勾选hover状态，选框图片及背景图片*/
+QTreeView::indicator:checked:hover
+{
+    image: url(theme/qssimage/checkbox_checked_hover.png);
+}
+ /*QTreeWidgetItem未勾选状态，选框图片*/
+QTreeView::indicator:unchecked:disabled
+{
+	image: url(theme/qssimage/checkbox_unchecked_disabled.png);
+}
+ /*QTreeWidgetItem勾选状态，选框图片及背景图片*/
+QTreeView::indicator:checked:disabled
+{
+	image: url(theme/qssimage/selected.png);
+}
+
+/*QTreeView部分-end------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*QScrollBar部分-start------------------------------------------------------------------------------------------------------------------*/
+QScrollBar:vertical {
+    background-color: transparent;
+    width: 12px;
+    margin: 2px;
+    border: 1px transparent #070808;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #5a5e66;
+    min-height: 5px;
+    border-radius: 5px;
+}
+
+QScrollBar::sub-line:vertical {
+    margin: 3px 0px 3px 0px;
+    border-image: none;
+    height: 0px;
+    width: 0px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+    background-color: #2A2929;
+}
+
+QScrollBar::add-line:vertical {
+    margin: 3px 0px 3px 0px;
+    border-image: none;
+    height: 0px;
+    width: 0px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+    background-color: #2A2929;
+}
+
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+    background: none;
+}
+
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+/*********************horizontal**********************/
+QScrollBar:horizontal {
+    background-color: transparent;
+    width: 7px;
+    height: 12px;
+    margin: 2px;
+    border: 1px transparent #070808;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #5a5e66;
+    min-width: 5px;
+    border-radius: 5px;
+}
+
+QScrollBar::sub-line:horizontal {
+    margin: 0px /* 0px 3px 0px*/;
+    border-image: none;
+    height: 0px;
+    width: 0px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+    background-color: #2A2929;
+}
+
+QScrollBar::add-line:horizontal {
+    margin: 0px /* 0px 3px 0px*/;
+    border-image: none;
+    height: 0px;
+    width: 0px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+    background-color: #2A2929;
+}
+
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal {
+    background: none;
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: none;
+}
+
+
+
+/*QScrollBar部分-end------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*此处修改抽稀界面*/
+ccSubsamplingDlg
+{
+	background-color: #2B2B2B;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+}
+
+
+/*QLabel部分-start------------------------------------------------------------------------------------------------------------------*/
+QFrame[Line=true]
+{
+	background-color: #2B2B2B;
+}
+
+QLabel
+{
+	color: #ffffff;
+	background-color: #2B2B2B;
+	border:0px solid #ffffff;
+}
+
+QLabel#nobordertransparent
+{
+	color: #ffffff;
+	background-color: transparent;
+	border:0px solid #ffffff;
+}
+
+
+
+/*QLabel部分-end------------------------------------------------------------------------------------------------------------------*/
+
+
+/*QDoubleSpinBox部分-start------------------------------------------------------------------------------------------------------------------*/
+QDoubleSpinBox
+{
+	color: #ffffff;
+	background-color: #2B2B2B;
+	border:1px solid #989898;
+}
+
+QDoubleSpinBox::up-button,
+QDoubleSpinBox::down-button
+{
+	background-color: #6F6F6F;
+	color: #ffffff;
+}
+
+QDoubleSpinBox::up-arrow
+{
+	image: url(theme/qssimage/mainwidget_uparrow_hover.png);
+
+}
+
+QDoubleSpinBox::down-arrow
+{
+	image: url(theme/qssimage/mainwidget_downarrow_hover.png);
+
+}
+
+QSpinBox
+{
+	color: #ffffff;
+	background-color: #2B2B2B;
+	border:1px solid #989898;
+}
+
+QSpinBox::up-button,
+QSpinBox::down-button
+{
+	background-color: #6F6F6F;
+	color: #ffffff;
+}
+
+QSpinBox::up-arrow
+{
+	image: url(theme/qssimage/mainwidget_uparrow_hover.png);
+
+}
+
+QSpinBox::down-arrow
+{
+	image: url(theme/qssimage/mainwidget_downarrow_hover.png);
+
+}
+
+/*QDoubleSpinBox部分-end------------------------------------------------------------------------------------------------------------------*/
+
+/*QGroupBox部分-start------------------------------------------------------------------------------------------------------------------*/
+QGroupBox
+{
+	border-radius: 0px;
+	font-size: 13px;
+	background-color: #2B2B2B;
+	color: #ffffff;
+	
+	
+	padding-left:16px;
+	padding-right:16px;
+	border:1px solid #ffffff;
+	margin-top: 3ex; 
+	
+}
+
+QGroupBox::title
+{
+	subcontrol-origin: margin;
+	subcontrol-position: top left;
+	padding-top: 0px;
+	color: #ffffff;
+	background-color: #2B2B2B;
+	left:12px;
+}
+
+QGroupBox::indicator:checked 
+{
+	image: url(theme/qssimage/checkbox_checked_normal.png);
+}
+
+QGroupBox::indicator:unchecked
+{
+	image: url(theme/qssimage/checkbox_unchecked_normal.png);
+}
+
+QGroupBox[AsBorder = true]
+{
+	border:1px solid #B0C4DE;
+}
+
+/*QGroupBox部分-end------------------------------------------------------------------------------------------------------------------*/
+
+
+/*QMenu部分-start------------------------------------------------------------------------------------------------------------------*/
+QMenu
+{
+	background-color: #2B2B2B;
+	border: 0px solid white;
+}
+
+
+QMenu::item
+{
+	background-color: #2B2B2B;
+	color: white;
+	font-size: 13px;
+	padding: 10px 28px;
+	margin: 0px 0px;
+	border: 0px solid #4D4D4D;
+	max-height:13px;
+}
+
+QMenu::icon
+{
+	padding:10px 10px;
+}
+
+QMenu::item::selected
+{
+	background-color: #4D4D4D;
+	color:white;
+	padding:10px 28px;
+	margin:0px 0px;
+}
+
+QMenu::item::disabled
+{
+	background-color: #2B2B2B;
+	color:#838383;
+	padding:10px 28px;
+	margin:0px 0px;
+}
+
+QMenu::separator
+{
+	height:1px;
+	background-color:#414141;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+/*QMenu部分-end------------------------------------------------------------------------------------------------------------------*/
+
+
+/*QSlider部分-start------------------------------------------------------------------------------------------------------------------*/
+QSlider
+{
+	background-color:transparent;
+}
+
+/*进度条*/
+QSlider::groove:horizontal
+{
+	border-radius:3px;
+	height:4px;
+}
+
+QSlider::groove:vertical
+{
+	border-radius:3px;
+	width:4px;
+}
+/*滑动块设置水平*/
+QSlider::handle:horizontal
+{
+	image:url(theme/qssimage/movebutton.png);
+	background-position: center center;
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 16px;
+    margin: -6px -6px;
+}
+/*滑过水平*/
+QSlider::sub-page:horizontal
+{
+	border-radius:2px;
+	background-color: #FFC804;
+}
+/*为滑过水平*/
+QSlider::add-page:horizontal
+{
+	border-radius:2px;
+	background-color: #828282;
+}
+/*滑动块设置竖直*/
+QSlider::handle:vertical
+{
+	Margin:-4px 0;
+	image:url(theme/qssimage/movebutton.png);
+}
+/*滑过竖直*/
+QSlider::sub-page:vertical
+{
+	border-radius:3px;
+	background-color: #FFC804;
+}
+/*为滑过竖直*/
+QSlider::add-page:vertical
+{
+	border-radius:3px;
+	background-color: #828282;
+}
+/*QSlider部分-end------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+QMessageBox {
+	background-color: #2B2B2B;
+	color: #ffffff;
+}
+
+
+QMessageBox QLabel { 
+	color: #ffffff;
+	background-color: 2B2B2B;
+}
+
+
+
+
+QDialogButtonBox > QPushButton::default
+{
+	background-color:#FFC804;
+	color: #000000;
+	border:1px solid #FFC804;
+}
+
+QDialogButtonBox > QPushButton::default:hover
+{
+	background-color:#FFE483;
+	color: #000000;
+}
+
+QDialogButtonBox > QPushButton::default:pressed
+{
+	background-color:#FFE483;
+	color: #000000;
+}
+
+QDialogButtonBox > QPushButton::default:disabled
+{
+	background-color:#6B5A1F;
+	color: #C0C0C0;
+}
+
+
+QDialogButtonBox > QPushButton::!default
+{
+	background-color:transparent;
+	color: #ffffff;
+	border:1px solid #838383;
+}
+
+QDialogButtonBox > QPushButton::!default:hover
+{
+	background-color:#1A1A1A;
+	color: #ffffff;
+}
+
+QDialogButtonBox > QPushButton::!default:pressed
+{
+	background-color:#FFE483;
+	color: #ffffff;
+}
+
+QDialogButtonBox > QPushButton::!default:disabled
+{
+	background-color:#000000;
+	color: #C0C0C0;
+}
+
+
+/*QPushButton部分-start------------------------------------------------------------------------------------------------------------------*/
+
+QPushButton
+{
+	color: #ffffff;
+	background-color:transparent;
+	border:1px solid #838383;
+	width:60px;
+	height:20px;
+}
+
+QPushButton:hover
+{
+	background-color: #1A1A1A;
+	color: #ffffff;
+}
+
+QPushButton:checked
+{
+	background-color:#FFE483;
+	color: #000000;
+}
+
+QPushButton:focus
+{
+	background-color:#FFE483;
+	color: #000000;
+}
+
+QPushButton:pressed
+{
+	background-color:#FFE483;
+	color: #FFC804;
+}
+
+QPushButton[metahubbutton]{
+	width: 80px;
+	height: 32px;
+	border-radius: 2px;
+	border: 1px solid #585858;
+	font-size:14px;
+	color:rgb(221, 221, 221);
+	background-color:rgb(43, 43, 43);
+}
+
+QPushButton[metahubbutton]:focus{
+	color:rgb(0, 0, 0);
+	background-color:rgb(255, 200, 4);
+}
+QPushButton[metahubbutton]:hover{
+	background-color:rgb(255, 180, 4);
+}
+QPushButton[metahubbutton]:pressed{
+	background-color:rgb(255, 220, 4);
+}
+
+
+
+/*QPushButton部分-end------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*此处修改左下角里面两个tabwidget*/
+QTabWidget#tabWidget_sfeditdlg>QTabBar::tab,QTabWidget#Export>QTabBar::tab
+{
+	color: #ffffff;
+	border: 1px solid #ffffff;
+	background: #2B2B2B;
+	min-width: 100px;
+}
+
+
+QTabWidget#tabWidget_sfeditdlg>QTabBar::tab:hover,QTabWidget#Export>QTabBar::tab:hover
+{
+	color: #ffffff;
+	border: 1px solid #1c1c1c;
+	background-color: #555555;
+	border-bottom-color: #1c1c1c;
+}
+
+QTabWidget#tabWidget_sfeditdlg>QTabBar::tab:selected,QTabWidget#Export>QTabBar::tab:selected
+{
+	color: #FFC804;
+	border: 1px solid #1c1c1c;
+	background-color: #484848;
+	border-bottom-color: #1c1c1c;
+}
+
+
+
+/*QTabWidget部分-start------------------------------------------------------------------------------------------------------------------*/
+QTabWidget
+{
+    background-color:#ff0000;
+	border-color: #2B2B2B;
+	color:#ffffff;
+}
+
+QTabWidget::pane
+{
+    background-color:#ff0000;
+	border-color: #2B2B2B;
+	color:#ffffff;
+}
+
+QTabWidget>QTabBar::tab
+{
+	color: #ffffff;
+	background-color: #2B2B2B
+	border: #2B2B2B
+	border-left: #2B2B2B
+	border-bottom: #2B2B2B
+}
+
+QTabWidget>QTabBar::tab:selected
+{
+	color: #ffffff;
+	background-color: #484848
+	border: #2B2B2B
+	border-left: #2B2B2B
+	border-bottom: #2B2B2B
+}
+
+
+
+/*QTabWidget部分-end------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/*QToolButton部分-start------------------------------------------------------------------------------------------------------------------*/
+QToolButton
+{
+	color: #ffffff;
+	background-color: #3B3B3B;
+    background-origin: content;
+    background-position: top;
+    text-align: bottom;
+}
+
+QToolButton:hover
+{
+	background-color: #545454;
+}
+
+QToolButton:selected
+{
+	background-color: #5A5A5A;
+}
+
+QToolButton:pressed
+{
+	background-color: #5A5A5A;
+}
+
+QToolButton:checked
+{
+	background-color: #5A5A5A;
+}
+
+QToolButton:disabled
+{
+	background-color: #3B3B3B;
+}
+
+
+/*QToolButton部分-end------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*QCheckBox部分-start------------------------------------------------------------------------------------------------------------------*/
+QCheckBox#checkBox_End
+{
+	color: #ffffff;
+	font-size: 13px;
+	font-family:"Microsoft YaHei UI";
+}
+
+QCheckBox#checkBox_End::indicator:checked 
+{
+  image: url(theme/qssimage/checkbox_checked_normal.png);
+}
+
+QCheckBox#checkBox_End::indicator:unchecked
+{
+  image: url(theme/qssimage/checkbox_unchecked_normal.png);
+}
+/*QCheckBox背景透明设置------------------------------------------------------------------------------------------------------------------*/
+QCheckBox[transparentbackgroundcheckbox]
+{
+    background-color:transparent;
+}
+
+
+/*QCheckBox部分-end------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*QTableView部分-start------------------------------------------------------------------------------------------------------------------*/
+QTableView
+{   
+     border:1px solid #e1e1e1;
+     background-color: #FFFFFF; 
+ 	 alternate-background-color:#eaf2ff;
+	 font-size:13px;
+	 color:#1b1b1b; 	  
+}
+
+/*QTableView部分-end------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*QAction部分-start------------------------------------------------------------------------------------------------------------------*/
+QAction
+{
+	background:#ff0000;
+	color:#ffffff;
+}
+
+
+
+/*QAction部分-end------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*QToolBar部分-start------------------------------------------------------------------------------------------------------------------*/
+QToolBar
+{
+	background:#1c1c1c;
+	color:#ffffff;
+	border:0px;
+}
+
+QToolBar>QAction
+{
+	background:#ff0000;
+	color:#ffffff;
+	border:0px;
+}
+/*QToolBar部分-end------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+/*QRadioButton部分-start------------------------------------------------------------------------------------------------------------------*/
+QRadioButton
+{
+	font-size: 13px;
+	border:0px;
+	color:#ade3ff;
+	background-color: #122d3e;
+}
+
+QRadioButton::indicator::unchecked
+{
+	image: url(theme/qssimage/radio-unchecked.png);
+}
+
+QRadioButton::indicator::checked
+{
+	image: url(theme/qssimage/radio-checked.png);
+}
+
+QRadioButton::indicator::unchecked:disabled
+{
+	image: url(theme/qssimage/radiobutton_unselected_disabled.png);
+}
+
+QRadioButton::indicator::checked:disabled
+{
+	image: url(theme/qssimage/radiobutton_selected_disabled.png);
+}
+/*QRadioButton部分-end------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+QStackedWidget#XFSMCenterStackedWidget
+{
+	border:0px solid rgba(173, 178, 185, 255);
+	background-color: #484848;
+}
